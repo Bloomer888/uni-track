@@ -93,9 +93,6 @@
                 {{ auth()->user()->name }}
                 <span class="badge bg-white text-primary ms-1">{{ ucfirst(auth()->user()->role) }}</span>
             </span>
-            <a href="{{ route(auth()->user()->getDashboardRoute()) }}" class="btn btn-sm btn-outline-light px-2" title="Dashboard">
-                <i class="bi bi-house"></i>
-            </a>
             <a href="{{ route('profile.edit') }}" class="btn btn-sm btn-outline-light px-2" title="Profile">
                 <i class="bi bi-person-circle"></i>
             </a>
